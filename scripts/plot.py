@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 
 
 # parameters to modify 
-filename="my_input.txt"
-label='label'
-xlabel = 'xlabel'
-ylabel = 'ylabel'
+filename="time_py.txt"
+label='performance mode'
+xlabel = 'x'
+ylabel = 'y'
 title='Simple plot'
 fig_name='my_graph.png'
 bins=100 #adjust the number of bins to your plot

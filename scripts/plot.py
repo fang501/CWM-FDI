@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 
 
 # parameters to modify 
-filename="time_py.txt"
-label='performance mode'
+filename="time_c.txt"
+label='c'
 xlabel = 'x'
 ylabel = 'y'
-title='Simple plot'
-fig_name='my_graph.png'
+title='c'
+fig_name='c.png'
 bins=100 #adjust the number of bins to your plot
 
 ## load data from input file
@@ -36,3 +36,35 @@ plt.title(title)
 plt.legend()
 plt.savefig(fig_name)
 plt.show()
+
+## statistics 
+
+# Calculate minimum value
+pmin = np.min(t)
+# Output:
+print(pmin)  
+
+# Calculate mean
+pmean = np.mean(t)
+# Output:
+print(pmean)  
+
+# Calculate median
+pmedian = np.median(t)
+# Output: 91.0
+print(pmedian)  
+
+# Calculate 90th percentile
+p90 = np.percentile(t, 90)
+# Output
+print(p90)  
+
+# Calculate 99th percentile
+p99 = np.percentile(t, 99)
+# Output
+print(p99)  
+
+# Calculate maximum
+pmax = np.max(t)
+# Output:
+print(pmax)  
